@@ -14,6 +14,7 @@ import {
 import { useState } from "react";
 import DebouncedSearchInput from "./components/DebouncedSearchInput";
 import ToggleSwitch from "./ui/ToggleSwitch";
+import ButtonList from "./components/ButtonList";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -199,6 +200,9 @@ function App() {
           onColor='bg-blue-900'
           offColor='bg-orange-500'
         />
+      </div>
+      <div>
+        <ButtonList />
       </div>
     </>
   );
